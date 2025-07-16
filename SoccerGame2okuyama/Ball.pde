@@ -7,8 +7,8 @@ class Ball {
   
   PImage ballImage; // ★ 1. ボールの画像を格納する変数を追加
   
-  float ballSize = 30;
-  float speed = 8;
+  float ballSize = 50;
+  float speed = 40;
   
   boolean isMoving;
 
@@ -61,6 +61,8 @@ class Ball {
     // fill(255);
     // noStroke();
     // ellipse(position.x, position.y, ballSize, ballSize);
-    image(ballImage, position.x, position.y, ballSize, ballSize);
+  imageMode(CENTER); // ボールを描画する時だけ、基準点を「中心」に変更
+  image(ballImage, position.x, position.y, ballSize, ballSize);
+  imageMode(CORNER);  // すぐに基準点をデフォルトの「左上」に戻す
   }
 }

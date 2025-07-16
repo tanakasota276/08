@@ -3,15 +3,15 @@
 class Goalkeeper {
   // === 基本的な属性 ===
   PVector position;
-  float w = 100; // 当たり判定の幅
-  float h = 150; // 当たり判定の高さ
+  float w = 120; // 当たり判定の幅
+  float h = 180; // 当たり判定の高さ
   float boundsX, boundsY, boundsW, boundsH;
 
   PImage keeperImage; // ★ 1. キーパーの画像を格納する変数を追加
 
   // === アニメーション用の属性 ===
   PVector targetPosition;
-  float speed = 5;
+  float speed = 20;
   boolean isMoving;
   
   // ★★★ 変更点: キーパーの賢さを決める確率 ★★★
