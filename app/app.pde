@@ -1,9 +1,9 @@
 //SoccerGame.pde
 // === グローバル変数 ===
 PImage backgroundImage;
-GameManager gameManager;
-Goalkeeper keeper;
-Ball ball;
+GameManager1 gameManager;
+Goalkeeper1 keeper;
+Ball1 ball;
 
 // ゴールエリアの定義
 float goalX, goalY, goalWidth, goalHeight;
@@ -19,9 +19,9 @@ void setup() {
   goalX = (width - goalWidth) / 2;
   goalY = 50;
   
-  keeper = new Goalkeeper(goalX, goalY, goalWidth, goalHeight);
-  ball = new Ball();
-  gameManager = new GameManager();
+  keeper = new Goalkeeper1(goalX, goalY, goalWidth, goalHeight);
+  ball = new Ball1();
+  gameManager = new GameManager1();
 }
 
 // === メインの描画ループ ===

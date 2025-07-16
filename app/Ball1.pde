@@ -1,6 +1,6 @@
 // Ball.pde
 
-class Ball {
+class Ball1 {
   PVector position;
   PVector initialPosition;
   PVector targetPosition;
@@ -13,7 +13,7 @@ class Ball {
   boolean isMoving;
 
   // コンストラクタ
-  Ball() {
+  Ball1() {
     // ★ 2. dataフォルダから画像を読み込む
     ballImage = loadImage("soccerball.png");
 

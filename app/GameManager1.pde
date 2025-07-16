@@ -1,6 +1,6 @@
 // GameManager.pde
 
-class GameManager {
+class GameManager1 {
   int score;
   int targetScore = 10;
   
@@ -19,12 +19,12 @@ class GameManager {
 
   PFont japaneseFont;
 
-  GameManager() {
+  GameManager1() {
     japaneseFont = loadFont("MeiryoUI-24.vlw"); 
     reset(null, null);
   }
   
-  void handleMouseClick(Goalkeeper gk, Ball b) {
+  void handleMouseClick(Goalkeeper1 gk, Ball1 b) {
     if (!isGameActive || b.isMoving || isWaitingForReset) return; 
 
     if (!isTimerStarted) {
@@ -36,7 +36,7 @@ class GameManager {
     b.shoot(mouseX, mouseY);
   }
   
-  void update(Goalkeeper gk, Ball b) {
+  void update(Goalkeeper1 gk, Ball1 b) {
     if (wasBallMoving && !b.isMoving) {
       if (!gk.isBlocking((int)b.position.x, (int)b.position.y)) {
         score++;
@@ -63,7 +63,7 @@ class GameManager {
     wasBallMoving = b.isMoving;
   }
   
-  void reset(Goalkeeper gk, Ball b) {
+  void reset(Goalkeeper1 gk, Ball1 b) {
     score = 0;
     isGameActive = true;
     isTimerStarted = false;

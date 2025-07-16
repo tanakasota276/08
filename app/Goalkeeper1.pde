@@ -1,6 +1,6 @@
 // Goalkeeper.pde
 
-class Goalkeeper {
+class Goalkeeper1 {
   // === 基本的な属性 ===
   PVector position;
   float w = 120; // 当たり判定の幅
@@ -18,7 +18,7 @@ class Goalkeeper {
   final float reactionChance = 0.65; 
 
   // コンストラクタ
-  Goalkeeper(float x, float y, float gw, float gh) {
+  Goalkeeper1(float x, float y, float gw, float gh) {
     boundsX = x;
     boundsY = y;
     boundsW = gw;
