@@ -47,8 +47,8 @@ void draw() {
 
 // === マウスクリック時の処理 ===
 void mousePressed() {
-  boolean isMouseInGoal = (mouseX > goalX && mouseX < goalX + goalWidth && 
-                           mouseY > goalY && mouseY < goalY + goalHeight);
+  boolean isMouseInGoal = (mouseX > goalX + 30 && mouseX < goalX + goalWidth - 30&& 
+                           mouseY > goalY && mouseY < goalY + goalHeight - 40);
                            
   if (isMouseInGoal) {
     gameManager.handleMouseClick(keeper, ball);
