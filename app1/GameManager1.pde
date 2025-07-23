@@ -48,7 +48,7 @@ class GameManager1 {
     } else {
       missed = true;
       gk.blockedLast = true;
-      gk.blockedDirection = (b.position.x < gk.position.x) ? "dive_left" : "dive_right";
+      gk.blockedDirection = (b.position.x<(gk.position.x + gk.w/2)) ? "dive_left" : "dive_right";
     }
 
     if (score >= targetScore) {
