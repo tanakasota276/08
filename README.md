@@ -51,7 +51,7 @@
 
 - Easy：5点獲得  
 - Normal：10点獲得  
-- Hard：13点獲得 & タイム30秒以内
+- Hard：13点獲得
 
 <p align="center">
   <img src="image/clear.png" alt="クリア画面" width="400" height="300">
