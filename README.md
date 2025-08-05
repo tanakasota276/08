@@ -22,8 +22,8 @@
 * クリア後に、スタートからクリアまでの所要時間が表示されます。
 
 * 最初のクリックでタイマーがスタートします。
-
+<p align="center">
 <img src="image/goal.png" alt="ゴールのスクリーンショット" width="400" height="300">
-
+</p>
 <img src="image/start.png" alt="ゴールのスクリーンショット" width="400" height="300">
 
