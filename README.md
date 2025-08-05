@@ -25,3 +25,5 @@
 
 <img src="image/goal.png" alt="ゴールのスクリーンショット" width="400" height="300">
 
+<img src="image/start.png" alt="ゴールのスクリーンショット" width="400" height="300">
+
